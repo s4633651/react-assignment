@@ -13,12 +13,8 @@ const OtherPage = (props: Props) => {
   const { id } = useParams();
   
   const handleClick = ()=>{
-    history('/3000');
+    history('/');
   }
-
-  const showParams = ()=>{
-    console.log(id);
-  };
 
   return (
     <>
@@ -26,7 +22,7 @@ const OtherPage = (props: Props) => {
         Hello from other page
       </h1>
       <Button onClick={handleClick}>Go Back</Button>
-      <Button onClick={showParams}>show params</Button>
+      
     </>
   );
 };

@@ -3,39 +3,13 @@ import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import EditContact from './EditContact';
 
-import api from '../../api'
 
 
 type Props = {};
 
 const HomePage = (props: Props) => {
 
-  const [contactsTable, setContactsTable] = useState<any[]>([
-    {
-      "id": "111",
-      "fName": "Nip",
-      "lName": "una",
-      "number": 4444444
-    },
-    {
-      "id": "222",
-      "fName": "Rav",
-      "lName": "indu",
-      "number": 222222
-    },
-    {
-      "id": "333",
-      "fName": "May",
-      "lName": "umi",
-      "number": 888888
-    },
-    {
-      "fName": "ssss",
-      "lName": "aaaa",
-      "number": 1111,
-      "id": "Ujg_nUj"
-    }
-  ]);
+  const [contactsTable, setContactsTable] = useState<any[]>([]);
   const [visibility, setVisibility] = useState(false);
   const [selectedContact, setSelectedContact] = useState({});
   const [index, setIndex] = useState(0);
